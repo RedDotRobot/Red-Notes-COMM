@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}Assessment Structure}{2}{section.1}%
+\contentsline {section}{\numberline {2}Introduction to Financial Management}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}What is financial management?}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Why is financial management important to study}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Accounting vs. Finance}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Accounting and Tax}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Accounting Information}{3}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Who uses accounting information?}{3}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}What are the different types of information in accounting}{3}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Financial accounting information and decision-making}{3}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Management accounting information and decision-making}{3}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.5}Audit and internal control information and decision-making}{4}{subsubsection.2.5.5}%
+\contentsline {subsubsection}{\numberline {2.5.6}Social and environmental accounting information and decision-making}{4}{subsubsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.6}Revenue and Expenses}{4}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Revenue}{4}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Expenses}{4}{subsubsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.7}Cash Accounting}{4}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Limitations of cash accounting}{5}{subsubsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.8}Accrual Accounting}{5}{subsection.2.8}%

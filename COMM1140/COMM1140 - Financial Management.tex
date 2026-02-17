@@ -1,0 +1,287 @@
+\documentclass{article}
+
+% Imports the catppuccin theme, using the mocha flavor,
+% from the directory above. Actual implementation
+% wouldn't need the import package unless the theme
+% and the document are in different directories.
+\usepackage{import}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{float}
+
+\newcommand\Myperm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\Mycomb[2]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+
+
+\definecolor{yorhabg}{HTML}{C8C2AA}
+\definecolor{yorhafg}{HTML}{4D493E}
+\definecolor{yorhagrid}{HTML}{B5AF9C}
+\definecolor{mred}{HTML}{D24545}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{pastel_red}{RGB}{255, 173, 173}
+\definecolor{pastel_orange}{RGB}{255, 214, 165}
+\definecolor{pastel_yellow}{RGB}{253, 255, 182}
+\definecolor{pastel_green}{RGB}{176, 217, 176}
+\definecolor{pastel_blue}{RGB}{167, 199, 231}
+\definecolor{pastel_purple}{RGB}{222, 218, 244}
+
+\pagecolor{yorhabg}
+\color{yorhafg}
+
+\import{preamble.sty}
+
+% Removes padding above title
+\usepackage{titling}
+\setlength{\droptitle}{-10em}
+
+% Font package
+\usepackage[T1]{fontenc}
+
+\usepackage{fouriernc}
+
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[skins]{tcolorbox}
+
+\DeclareMathOperator{\sgn}{sgn}
+
+\usepackage{tikz}
+\usepackage{eso-pic}
+\usetikzlibrary{calc,shadows.blur}
+\usetikzlibrary{3d}
+
+\AddToShipoutPictureBG{%
+\begin{tikzpicture}[remember picture, overlay,
+                    help lines/.append style={line width=0.05pt, color=yorhagrid}]
+  \draw[help lines] (current page.south west) grid[step=5pt]
+                    (current page.north east);
+\end{tikzpicture}%
+}
+
+% Margins
+\topmargin=0in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\AtBeginEnvironment{tcolorbox}{\small}
+
+\newtcolorbox{question}{%
+    enhanced,
+    colback=yorhabg,
+    colframe=yorhafg,
+    coltext=yorhafg,
+    coltitle=yorhabg,
+    title=\textbf{Question.},
+    arc=0pt,
+    outer arc=0pt,
+    drop shadow southeast,
+    sharp corners
+}
+
+\newcommand\bb[1]{\textcolor{yorhafg}{\textbf{#1}}}
+
+\title{\textbf{COMM1140: Financial Management}}
+\author{L. Cheung}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\newpage
+
+\section{Assessment Structure}
+	\begin{itemize}
+		\item \textbf{Assessment 1: Tutorial Participation (15\%)} - Class participation (assessed in tutorials from topic 2)
+			\begin{itemize}
+				\item Homework Submission (5 marks)
+				\item Quality and Impact of Contributions (5 marks)
+				\item Frequency of Participation (5 marks)
+			\end{itemize}
+		\item \textbf{Assessment 2: Group Assignment (25\%)} - Assignment based on the content in topics 1-5 (\textbf{Video Submission in Week 9})
+			\begin{itemize}
+				\item Released to students \textbf{Monday of Week 5}
+				\item Groups of 4-5
+				\item 20 minute group recording
+			\end{itemize}
+		\item \textbf{Assessment 3: Final Examination (60\%)} - A mix of MCQs and case study/short-answer questions on all topics.
+			\begin{itemize}
+				\item A new section will appear on Moodle in Week 8 to help students prepare
+				\item All sample questions will be provided by Week 9
+			\end{itemize}
+		\item \textbf{Formal Requirements} - Passing mark of at least 50/100 throughout all assessments
+	\end{itemize}
+
+\chapter{Accounting}
+\section{Introduction to Financial Management}
+	\textbf{Learning Objectives}
+		\begin{itemize}
+			\item Differentiate between accounting, finance, and tax
+			\item Understand the different forms of accounting information
+			\item Differentiate between revenues and expenses
+			\item Explain the concepts of accrual accounting, cash accounting, and accounting profit
+		\end{itemize}
+	
+	\subsection{What is financial management?}
+		\begin{itemize}
+			\item Financial management is the process of planning, organising, controlling, and monitoring financial resources to achieve company goals and objectives $\rightarrow$ how we use information to make informed business decisions
+			\item The \textit{primary objective} of financial management is to maximise shareholder value through appropriate utilisation and decision making
+		\end{itemize}
+
+	\subsection{Why is financial management important to study}
+		\begin{itemize}
+			\item Financial management is a key life skill
+			\item Entrepreneurship and roles within a company
+			\item Implications on all aspects of business operations (such as Marketing, Management, Tax, Information Systems, Actuary)
+			\item Eg. Budgeting within a business
+			\item Measuring performance of a business, eg. profit
+		\end{itemize}
+
+		\textbf{Accounting is how you understand and run a successful business}
+
+		Signs of business health include
+			\begin{itemize}
+				\item Profitability
+				\item Cash flow
+				\item Short and long term sustainability
+				\item Business value
+			\end{itemize}
+		
+		Accounting powers every business decision, categorised as long-term (strategic), short-term (operational), commercial (evaluation of business deals). Ultimately, accounting enables career success, as an advisor, entrepreneur, or a leader. Accounting is a good pathway into a career, as a way of entering a company. \\
+		
+		Finance helps you value a business and make good investment decisions using accounting information.
+
+	\subsection{Accounting vs. Finance}
+
+	\subsection{Accounting and Tax}
+
+	\subsection{Accounting Information}
+		\subsubsection{Who uses accounting information?}
+			\begin{itemize}
+				\item A wide range of stakeholders use accounting information daily
+				\item These users often have different needs that accounting information can satisfy
+			\end{itemize}
+
+		\subsubsection{What are the different types of information in accounting}
+			\begin{itemize}
+				\item Financial accounting $\rightarrow$ Information given to people \colorbox{pastel_red}{outside} of the enterprise
+				\item Management accounting $\rightarrow$ Information given to users \colorbox{pastel_blue}{within} the enterprise to assist in operational planning and controlling decisions
+				\item Audit and internal control $\rightarrow$ An audit confirms the accuracy of financial statements and internal control involves implementing policies and procedures that safeguard assets and ensure reliable financial information
+				\item Social and environmental accounting (accounting for sustainability) $\rightarrow$ Provision of non-financial information to users \colorbox{pastel_red}{external} to the enterprise 
+			\end{itemize}
+
+		\subsubsection{Financial accounting information and decision-making}
+			\begin{itemize}
+				\item \textbf{Financial accounting} primarily serves \colorbox{pastel_red}{external stakeholders}, such as investors/shareholders, creditors, regulatory bodies and the general public
+				\item It provides an overview of a company's financial health
+				\item Analysing financial statements allows managers to evaluate profitability, liquidity, and solvency
+				\item Investors rely on financial statements to inform their investment decisions
+			\end{itemize}
+
+		\subsubsection{Management accounting information and decision-making}
+			\begin{itemize}
+				\item \textbf{Management accounting} is designed for \colorbox{pastel_blue}{internal stakeholders}, including managers and executives
+				\item It provides detailed financial information to aid in strategic planning, budgeting, performance evaluation, and internal decision-making
+				\item Cost accounting, a subset of management accounting, allows managers to optimise pricing and cost efficiency
+			\end{itemize}
+
+		\subsubsection{Audit and internal control information and decision-making}
+			\begin{itemize}
+				\item \textbf{Audits and internal control systems} ensure the reliability and integrity of financial inform, instilling confidence in decision-makers
+				\item Audits and internal control systems can also benefit internal stakeholders by safeguarding assets and promoting operational efficiency
+				\item Investors trust audited financial statements
+			\end{itemize}
+
+		\subsubsection{Social and environmental accounting information and decision-making}
+			\begin{itemize}
+				\item Social and environmental accounting caters to both internal and external stakeholders
+				\item Internally, it helps management assess the company's impact on environmental and societal sustainability
+				\item Externally, it informs socially conscious investors, customers, and regulatory bodies about the company's commitment to social and environmental responsibility
+			\end{itemize}
+
+
+	\subsection{Revenue and Expenses}
+
+		\subsubsection{Revenue}
+			\begin{itemize}
+				\item Revenue represents an increase in company wealth
+				\item Wealth increases because customers:
+					\begin{itemize}
+						\item Pay cash for goods or services
+						\item Promise to pay cash (accounts receivable)
+					\end{itemize}
+				\item Types of revenue include:
+					\begin{itemize}
+						\item Sales revenue $\rightarrow$ Generated by selling goods and/or services in the ordinary course of business
+						\item Other revenue may consist of items such as:
+							\begin{itemize}
+								\item Interest income on bank accounts or investments
+								\item Dividends received from investments in other companies
+							\end{itemize}
+					\end{itemize}
+			\end{itemize}
+
+		\subsubsection{Expenses}
+
+			\begin{itemize}
+				\item Expenses represent decreases in company wealth
+				\item Expenses must be incurred in order to earn revenue
+				\item These \textbf{do not} include the payment of dividends
+			\end{itemize}
+
+	\subsection{Cash Accounting}
+		\begin{itemize}
+			\item Cash accounting involves recording revenues and expenses \textbf{at the time the cash is received or paid}
+			\item This is reasonably precise given that the accountant knows whether cash has been paid or received, and the amount is easily determined
+		\end{itemize}
+
+		\subsubsection{Limitations of cash accounting}
+			\begin{itemize}
+				\item The complexity of business means that the financial health of a company is affected by transactions and cash flows in both the past and future
+				\item Events where the \textbf{timing} of cash flows differs from the \textbf{substance} of the transaction include:
+					\begin{itemize}
+						\item Sale of goods or services on credit
+						\item Services that will be paid in a later period (eg. electricity, water, gas, hotel accommodations)
+						\item Companies receiving cash in advance for services provided (eg. magazine subscriptions, airline tickets, concert tickets)
+					\end{itemize}
+			\end{itemize}
+
+	\subsection{Accrual Accounting}
+		\begin{itemize}
+			\item To cope with these complexities, most businesses use accrual accounting
+			\item Accrual accounting involves recording revenues and expenses \textbf{at the time they occur}, not when the cash is received or paid
+			\item The \colorbox{pastel_green}{key test for revenue recognition is whether the goods and services have been \textbf{rendered}} (ie. delivery to a customer or provision of a service)
+			\item \textbf{Receipt of cash is not required for revenue to be recognised}
+		\end{itemize}
+
+		\begin{table}[H]
+			\centering
+			\setstretch{1.25}
+			\begin{tabular}{p{4cm}|p{6cm}|p{6cm}}
+				\hline
+				\multicolumn{1}{c|}{} & 
+				\multicolumn{1}{c|}{\textbf{Cash basis}} & 
+				\multicolumn{1}{c}{\textbf{Accrual basis}} \\
+				\hline
+				\textbf{Record revenues when:} & Cash is received 	& Revenues are earned \\
+				\textbf{Record expenses when:} & Cash is paid		& Expenses are incurred \\
+				\textbf{In Australia, the ATO says that:}	& Businesses with a turnover of less than \$10 million can use cash accounting	& Businesses with a turnover of more than \$10 million must use accrual accounting \\
+				\textbf{Benefits:}	& Simple and effective in managing the cash flow position of a business	& More accurate and clear view of the financial health of the business \\
+
+				\hline
+			\end{tabular}
+		\end{table}
+		
+\end{document}
+
+

@@ -41,6 +41,13 @@ INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
 INPUT /usr/share/texmf-dist/tex/latex/titling/titling.sty
 INPUT /usr/share/texmf-dist/tex/latex/titling/titling.sty
 INPUT /usr/share/texmf-dist/tex/latex/titling/titling.sty
@@ -356,14 +363,6 @@ INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT ./COMM0999 - myBCom Blueprint.toc
@@ -373,8 +372,27 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 OUTPUT COMM0999 - myBCom Blueprint.toc
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+INPUT /usr/share/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8c.tfm
+INPUT ./images/COMMTImetable.png
+INPUT ./images/COMMTImetable.png
+INPUT images/COMMTImetable.png
+INPUT ./images/COMMTImetable.png
+INPUT ./images/COMMTImetable.png
+INPUT /usr/share/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8c.vf
 INPUT COMM0999 - myBCom Blueprint.aux
 INPUT /usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb

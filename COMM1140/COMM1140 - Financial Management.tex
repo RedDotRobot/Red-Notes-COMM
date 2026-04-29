@@ -5,6 +5,7 @@
 % wouldn't need the import package unless the theme
 % and the document are in different directories.
 \usepackage{import}
+\usepackage{array}
 \usepackage{xcolor}
 \usepackage{cancel}
 \usepackage{mathtools}
@@ -121,8 +122,6 @@
 			\end{itemize}
 		\item \textbf{Formal Requirements} - Passing mark of at least 50/100 throughout all assessments
 	\end{itemize}
-
-\chapter{Accounting}
 
 \section{Introduction to Financial Management}
 	\textbf{Learning Objectives}
@@ -486,7 +485,6 @@
 
 	\textbf{Learning Objectives}
 
-		At the end of this topic, you will be able to:
 		\begin{enumerate}
 			\item Identify and record business transactions using transaction analysis
 			\item Understand how different business transactions impact the financial statements
@@ -545,7 +543,7 @@
 		\begin{alignat*}{3}
 			\text{Assets} \quad &= \quad \text{Liabilities} \quad &&+ \quad \text{Shareholder's Equity}	\\
 			A \quad &= \quad L \quad &&+ \quad SE	\\
-			CA + NCA \quad &= \quad CL + NCL \quad &&+ \quad SE
+			CA + NCA \quad &= \quad CL + NCL \quad &&+ \quad SC + RP
 		\end{alignat*}
 
 		Where:
@@ -553,10 +551,10 @@
 			\item $CA + NCA = \text{Current Assets} + \text{Non-Current Assets}$
 			\item $CL + NCL = \text{Current Liabilities} + \text{Non-Current Liabilities}$
 			\item $SE = SC + Op. \; RP + \text{Profits} - \text{Dividends}$
+			\item $SC = \text{Capital contributions by equity holders (Share Capital)}$
+			\item $RP = \text{Retained Profits} = Op.\;RP + \text{Profit} - \text{Dividends}$
 				\begin{itemize}
-					\item $SC = \text{Capital contributions by equity holders (Share Capital)}$
 					\item $Op. \; RP = \text{Opening Retained Profits}$
-					\item $\text{Profit} = \text{Revenues} - \text{Expenses}$
 				\end{itemize}
 		\end{itemize}
 
@@ -637,6 +635,7 @@
 			\item Depreciation involves allocating the cost of a non-current asset over its lifespan (useful like) to acknowledge the gradual consumption of the asset's economic value as an expense
 			\item Accumulated Depreciation (Balance Sheet account) shows all depreciation charged against an asset to date
 			\item Depreciation Expense (Income Statement account) shows only this year's depreciation allocation
+			\item Net Book Value: $\text{Original Purchase Cost} - \text{Accumulated Depreciation}$
 		\end{itemize}
 
 		\begin{question}{Example}
@@ -657,5 +656,788 @@
 				\end{center}
 			\end{table}
 		\end{question}
+
+\section{Financial Statement Analysis}
+
+	\textbf{Learning Objectives}
+
+		\begin{itemize}
+			\item Explain the purpose and limitations of financial ratio analysis
+			\item Identify key ratios and their usefulness
+			\item Calculate and interpret the key financial ratios
+			\item Interpret the impact of transactions on key ratios
+		\end{itemize}
+
+	\subsection{Ratio analysis}
+
+		\begin{itemize}
+			\item Absolute dollar amounts are of limited use
+			\item Changes in key values over time are more important, (relative percentages rather than absolute values)
+			\item Put into relation with another relevant quantity to create a meaningful metric (financial ratio)
+				\begin{itemize}
+					\item Removes units
+					\item Compensates for price inflation
+					\item Allows for comparison to other firms $\rightarrow$ financial performance, market power, profit margin
+				\end{itemize}
+			\item A relevant ratio must be used (eg, accounting for COGS or cost of services depending on the company)
+			\item The ratio needs to be compared to something else, eg. another year or another company
+		\end{itemize}
+
+		\subsubsection{Types of ratio analysis}
+
+			\begin{enumerate}
+				\item Profitability ratios
+					\begin{itemize}
+						\item Ability to generate earnings compared to expenses
+						\item Gross margin
+						\item Profit margin
+						\item Return on Assets
+						\item Return on Equity
+					\end{itemize}
+				\item Liquidity ratios
+					\begin{itemize}
+						\item Ability to pay financial obligations
+					\end{itemize}
+				\item Activity (turnover) ratios
+					\begin{itemize}
+						\item Activities, ie. the conversion of assets/liabilities into cash
+					\end{itemize}
+				\item Financial structure ratios (solvency ratios)
+					\begin{itemize}
+						\item How the firm finances operations and growth
+					\end{itemize}
+				\item Price & valuation ratios
+					\begin{itemize}
+						\item Ratios that use market prices
+					\end{itemize}
+			\end{enumerate}
+
+	\subsection{The DuPont System}
+
+		\begin{itemize}
+			\item Measures how well a company can create value for shareholders
+			\item Breaks down ROE into components
+		\end{itemize}
+
+\section{Company Valuation}
+
+	\textbf{Learning Objectives}
+
+		\begin{itemize}
+			\item Calculate and interpret market-based financial ratios
+			\item Understand the difference between accounting and market-based information as well as the difference between equity and firm value
+			\item Understand different approaches to valuation
+			\item Using financial ratios to value companies
+		\end{itemize}
+
+	\subsection{Market Values}
+
+		The allocation of scarce resources with the uncertainty of future markets.
+
+		\subsubsection{Accounting vs. finance perspectives}
+
+			\begin{table}[H]
+				\setstretch{1.25}
+				\centering
+				\begin{tabular}[c]{p{8cm}|p{8cm}}
+					\hline
+					\textbf{Accounting statements} &
+					\textbf{Financial valuations}	\\
+					\hline
+					\begin{itemize}
+						\item Backward looking
+						\item "Realized" performance and state of company
+						\item Risks are generally not visible in statements
+						\item Allows investors to see what has been happening inside the firm
+					\end{itemize}
+					&
+					\begin{itemize}
+						\item Forward looking
+						\item Future or "expected" performance
+						\item Reflects uncertainty of future outcomes
+						\item Informs company about future financing options
+						\item Using market-based (what the market [investors] value the asset as) values rather than book values (what the asset is worth)
+					\end{itemize}
+					\\
+					\hline
+				\end{tabular}
+			\end{table}
+
+		\subsubsection{Book values vs. market values}
+
+			Book-values account for what an asset is worth, however market-based values are based on what investors value the asset as being worth. Market value incorporates future wealth and brand value which the book value does not account for. Depending on the company, the book value may be nearly identical to the market value. Market value is most affected by the value of equity rather than debt.
+
+		\subsubsection{What is a company worth?}
+
+			In finance, "the value of a firm" can refer to either
+			\begin{itemize}
+				\item Value of equity only (Residual owner of assets)
+					\begin{align*}
+						\text{Market capitalisation} = \text{Market Value of Equity} = \text{Share price} \times \text{Number of shares}
+					\end{align*}
+				\item Value of all the firm's assets
+					\begin{align*}
+						\text{Enterprise Value} = \text{MV of Debt} + \text{MV of Equity} - \text{Cash}
+					\end{align*}
+			\end{itemize}
+	
+	\subsection{Price-based Ratios}
+
+		\subsubsection{Per-share metrics}
 			
+			\begin{itemize}
+				\item \textbf{Performance metrics} relevant to shareholders:
+					\begin{itemize}
+						\item Earnings per Share (in \$ and cents)
+						\item Dividends per share (in \$ and cents)
+						\item \colorbox{pastel_red}{Note:} These are not valuation ratios
+					\end{itemize}
+				\item \textbf{Valuation metrics} relevant to shareholders
+					\begin{itemize}
+						\item Price/Earnings Ratio
+						\item Dividend Yield
+					\end{itemize}
+			\end{itemize}
+
+		\subsubsection{Earnings per share (EPS)}
+
+			Some accounting sources use NOPAT:
+			\begin{align*}
+				\text{Earnings Per Share (EPS)} = \frac{\text{Operating profit after tax}}{\text{Shares Outstanding}}
+			\end{align*}
+			as a "cleaner" income measure since it accounts for changes in firm size over time.
+
+			Financial analysts likely use NI, which is available to be paid out to shareholders:
+			\begin{align*}
+				\text{Earnings Per Share (EPS)} = \frac{\text{Net Income to Common Equity}}{\text{Shares Outstanding}}
+			\end{align*}
+
+		\subsubsection{Dividends per share (DPS)}
+
+			In the accounting context:
+			\begin{align*}
+				\text{Dividends Per Share (DPS)} = \frac{\text{Total Annual Dividends declared}}{\text{# of shares outstanding}}
+			\end{align*}
+			\begin{itemize}
+				\item Used to assess a firm with itself over time
+			\end{itemize}
+
+		\subsubsection{Price-to-Earnings Ratio}
+
+			The price-to-earnings ratio is what investors are willing to pay per dollar of earnings per share. A high P/E ratio could mean that the company's stock is overvalued compared to other similar firms, or that investors are expecting high growth rates in future earnings.
+			\begin{align*}
+				\text{P/E Ratio} = \frac{\text{Share Price}}{\text{Earnings Per Share (EPS)}}
+			\end{align*}
+
+			Either current or future earnings can be used, however using future earnings creates uncertainty in the ratio.
+
+		\subsubsection{Dividend Yield}
+
+			Measurement of the relationship between dividends and the share price
+			\begin{align*}
+				\text{Dividend Yield} = \frac{\text{Dividends Per Share (DPS)}}{\text{Share Price}}
+			\end{align*}
+
+			Since the formula incorporates the share price, it cannot be used to compare different companies.
+
+	\subsection{Valuation methods}
+
+		\subsubsection{Valuation approaches}
+
+			Companies can either be valued in the short term (trading) or long term (investing)
+
+		\subsubsection{Fundamental (Bottom-Up) Analysis}
+
+			\begin{itemize}
+				\item Comparable Company Analysis (CCA)
+					\begin{itemize}
+						\item Relative valuation approach
+						\item Value of a target firm depends on the value of other similar firms
+					\end{itemize}
+				\item Intrinsic analysis
+					\begin{itemize}
+						\item Absolute approach
+						\item Value depends on the present value of all future cash flows
+						\item The more cash flows a firm generates, the higher the value
+					\end{itemize}
+			\end{itemize}
+
+	\subsection{Comparable Company Analysis (CCA)}
+
+		\begin{enumerate}
+			\item Find similar peer firms
+			\item Obtain multiples, a ratio of firm value relative to some performance metric of the firm (eg. earnings, cash flows, sales, book value)
+			\item Similar performance characteristics should carry the same value. They should "trade for the same multiples"
+		\end{enumerate}
+
+\section{Free Cash Flow Estimation}
+
+	\subsection{What is Free Cash FLow (FCF)}
+		
+		FCF is the cash left after operating the business and reinvesting in it. FCF can be used to pay dividends, pay down debt, or just sit as cash (for later reinvestment). It provides information about a company's financial strength, flexibility, and quality of earnings. Absolute valuation is when a firm is valued based on the cash it will generate for investors Absolute valuation is when a firm is valued based on the cash it will generate for investors.
+
+		\begin{align*}
+			\text{FCF} =& \text{NOPAT}	\\
+						&+ \text{Depreciation & Amortisation}	\\
+						&- \text{Capital Expenditures}	\\
+						&- \text{Change on Op. Net Working Capital}
+		\end{align*}
+
+		NOPAT is EBIT $\times (1 - \text{Tax Rate})$, and since depreciation is tax deductible it must be removed for tax to be calculated. However, since it is not a cash flow, it is added back when calculating FCF. The only cash flow effect of deducting depreciation is to reduce taxes.
+
+		Terminal cash flow is the value that the firm could be sold for at the horizon period. It is the single value that represents all the infinite FCF that come after the horizon period. This is calculated using firm multiples.
+
+\section{Business Taxation}
+	
+	\subsection{What is a tax?}
+		
+		OECD defines tax as "a compulsory, unrequited payment to general government. Taxes are unrequited in the sense that benefits provided by government to taxpayers are not normally in proportion to their payments".
+
+	\subsection{Why do governments impose taxation?}
+
+		\begin{itemize}
+			\item The purpose of taxation is to raise revenue to fund the provision of public goods and services
+			\item They solve market failures
+			\item Helps in social/community goals: distribution objectives, inequality
+		\end{itemize}
+
+	\subsection{Tax policy objectives}
+
+		What makes a 'good' tax
+		\begin{itemize}
+			\item Simple: easy to understand and comply with
+			\item Equitable: the burden should be borne fairly
+				\begin{itemize}
+					\item Vertical equity: tax the rich
+					\item Horizontal equity: tax people with same income equally
+				\end{itemize}
+			\item Efficient: should not distort decision making
+			\item Sustainable: structurally durable, yet flexible to deal with changes
+			\item Consistent: tax policy should be internally consistent
+		\end{itemize}
+
+	\subsection{Administration of Australia's tax system}
+		
+		\begin{itemize}
+			\item Federal - Australian Taxation Office (ATO), State - Office of State Revenue (OSR)
+			\item Commissioner of Taxation
+			\item Inspector-General of Taxation & Taxation Ombudsman (IGTO)
+			\item Administrative Review Tribunal (ART)
+			\item Taxpayers bear the responsibility for correctly preparing tax returns
+		\end{itemize}
+
+	\subsection{Sources of Australian taxation law}
+
+		\begin{itemize}
+			\item Statute law - legislation
+			\item Case law - 'common law'
+				\begin{itemize}
+					\item Created by the decisions of courts
+					\item Accumulators over time
+					\item Creation of law to fill a legislative vacuum
+					\item Statutory interpretation
+				\end{itemize}
+			\item ATO practice - a de facto source of law
+				\begin{itemize}
+					\item ATO's assessment and review procedures, day-to-day decisions in formal/informal dealings
+					\item Not technically law, but creates informal law
+				\end{itemize}
+		\end{itemize}
+		
+	\subsection{Who must pay income tax?}
+
+		In Australia, income tax is payable by each individual and company (and other entities).
+		\begin{itemize}
+			\item Unlike other countries, no 'joint filing' or 'family filing' - every individual must pay separately
+			\item Requirement to ledge annual tax return: s161(1) \textit{Income Tax Assessment Act} 1936 (ITAA1936)
+		\end{itemize}
+
+	\subsection{What happens if taxes are not paid?}
+
+		\begin{itemize}
+			\item There are ways of legitimately and illegitimately reducing taxes
+			\item Large businesses are able to hire advisors to minimise their tax whereas small businesses who cannot afford such services are more likely to engage in illegitimate tax reduction
+		\end{itemize}
+
+	\subsection{Tax evasion, avoidance, and planning}
+
+		\begin{itemize}
+			\item \textbf{Tax evasion}: involves the illegal underpayment of tax, typically by failing to disclose liabilities or wrongly claiming benefits
+				\begin{itemize}
+					\item Very illegal
+				\end{itemize}
+			\item \textbf{Tax avoidance}: involves entering into arrangements that are designed to exploit unintended defects and loopholes in the law
+				\begin{itemize}
+					\item There are anti tax avoidance legislations that account for many such cases
+					\item Is still legal
+				\end{itemize}
+			\item \textbf{Tax planning}: involves the arrangement of one's affairs to exploit legitimate opportunities available under the law
+		\end{itemize}
+
+	\subsection{What happens if taxes are not paid?}
+
+		Consequences of unacceptable or overly aggressive tax management:
+			
+			\begin{itemize}
+				\item Reputational effects - companies want to be seen as being 'good corporate citizens'
+					\begin{itemize}
+						\item Eg. Starbucks in the UK suffered heavy reputational consequences after it was discovered that they didn't pay taxes to the UK
+					\end{itemize}
+				\item Companies need to demonstrate they pay their 'fair share' of taxes ('social contract')
+				\item ATO audits and/or audit penalties
+				\item Imprisonment
+			\end{itemize}
+
+	\subsection{Types of taxpayers}
+
+		In Australia, different types of taxpayers are treated in different ways
+		\begin{itemize}
+			\item Individuals
+				\begin{itemize}
+					\item Employment income, investment income, deductions (from tax claims)
+					\item Taxed at personal marginal tax rates
+				\end{itemize}
+			\item Sole trader
+				\begin{itemize}
+					\item An individual conducting a business in their own name
+					\item Not legally different from the individual, however will have more deductions
+				\end{itemize}
+			\item Partnership
+				\begin{itemize}
+					\item Two or more people conducting a business together as partners
+					\item It is treated as a conduit between the people, tax is distributed between shareholders
+				\end{itemize}
+			\item Trust
+				\begin{itemize}
+					\item A legal relationship where a trustee manages assets on behalf of the beneficiaries
+					\item Not treated as a separate taxpayer
+					\item Treated as a conduit for tax purposes
+				\end{itemize}
+			\item Company
+				\begin{itemize}
+					\item A separate legal entity
+					\item Treated as a separate taxpayer from shareholders and must lodge a tax return
+					\item Taxed at a company tax rate of 30\% or 25\% for small companies (aggregate turnover below \$50m).
+				\end{itemize}
+		\end{itemize}
+
+	\subsection{Administration}
+		
+		Tax File Number (TFN)
+			\begin{itemize}
+				\item A TFN is a unique personal reference number in the tax and superannuation systems
+				\item Part of identity
+			\end{itemize}
+
+		Australian Business Number (ABN)
+			\begin{itemize}
+				\item An ABN is a unique identifier assigned to each entity that is carrying on a business
+				\item Must be displayed on all tax invoices issued
+			\end{itemize}
+
+	\subsection{Types of taxes}
+
+		\begin{itemize}
+			\item Direct taxes
+				\begin{itemize}
+					\item Income taxes: personal, company
+					\item Property taxes
+				\end{itemize}
+			\item Indirect taxes
+				\begin{itemize}
+					\item Sales taxes: GST, value-added tax
+					\item Factor taxes
+				\end{itemize}
+		\end{itemize}
+
+	\subsection{The main Australian taxes}
+
+		\begin{itemize}
+			\item Federal taxes
+				\begin{itemize}
+					\item Personal income tax
+					\item Company income tax
+					\item GST
+					\item Superannuation taxes
+					\item Fringe Benefits Tax (FBT)
+				\end{itemize}
+			\item State taxes
+				\begin{itemize}
+					\item Stamp duty
+					\item Payroll tax
+					\item Land tax
+				\end{itemize}
+			\item Local government taxes
+				\begin{itemize}
+					\item Council rates
+					\item Municipal charges
+				\end{itemize}
+		\end{itemize}
+	
+	\subsection{Business taxation}
+		\begin{itemize}
+			\item Net income or net profit values are 'pre-tax' amounts
+		\end{itemize}
+
+	\subsection{Company income tax}
+		\begin{itemize}
+			\item There is a fundamental difference between income tax calculated in the annual financial statements and income tax liability calculated in the annual income tax return
+			\item Financial statements are prepared in accordance with accounting standards (IFRS)
+				\begin{itemize}
+					\item 'Income tax expense' in the Income Statement
+					\item 'Income tax liability' in the Balance Sheet
+					\item 'Cash taxes paid' in the Cashflow Statement
+				\end{itemize}
+		\end{itemize}
+		\begin{question}{Formula for tax}
+			\begin{align*}
+				\text{Taxable income} &= \text{Assessable income} - \text{Deductions} \quad \left[\text{s4-15 ITAA1197}\right]	\\
+				\text{Tax payable} &= \left(\text{Taxable income} \times \text{Relevant rate}) - \text{Tax offsets} \quad \left[\text{s4-10 ITAA1997}\right]
+			\end{align*}
+		\end{question}
+		\begin{itemize}
+			\item Tax offsets are different to deductions
+			\item Since they reduce tax payable, they are more valuable
+			\item Eg. Accounts for tax paid overseas
+		\end{itemize}
+		\begin{align*}
+			\text{Assessable income} = \text{Ordinary income} + \text{Statutory income} \quad \left[\text{s6-1(1) ITAA1997}\right]
+		\end{align*}
+		\begin{itemize}
+			\item Ordinary income is income according to ordinary concepts
+			\item Statutory income is amounts that are not ordinary income but are included in assessable income
+		\end{itemize}
+
+		\subsubsection{Deductions}
+			\begin{itemize}
+				\item $\text{Deductions} = \text{costs incurred by the taxpayer in gaining or producing their assessable income}$
+				\item Specific deductions are amounts that a provision of the Act allows you to deduct
+				\item Bad debts can be deducted
+				\item In accounting, doubtful debts can we written off however in taxation they must be bad
+				\item General deductions can be made for any loss or outgoing to the extent that:
+					\begin{itemize}
+						\item It is incurred in gaining or producing assessable income
+							\begin{itemize}
+								\item There is maximum value of a good as long as it serves a business related function
+							\end{itemize}
+						\item It is necessarily incurred in carrying on a business for the purpose of gaining or producing your assessable income
+						\item Cannot deduct the following
+							\begin{itemize}
+								\item Loss or outgoing of capital
+								\item Loss or outgoing of a private or domestic nature
+								\item It is incurred in relation to gaining or producing your exempt income
+								\item A provision of this Act prevents you from deducting it
+							\end{itemize}
+						\item Depreciation can be claimed
+						\item 'Capital allowances' is a generic term that refers to the taxation treatment of depreciable assets
+					\end{itemize}
+			\end{itemize}
+
+	\begin{itemize}
+		\item If a business experiences losses (eg. COVID), they are eligible to hold their taxes and pay them in a later year (carried forward tax loss)
+		\item In this case, the business must pass either the same business or similar business tests (shareholders with >50\% voting power must have their shares at the start and end of the year)
+	\end{itemize}
+
+\section{Audit and Internal Control}
+
+	Internal controls are safeguards that help a company achieve its goals and protect its assets. They are designed to prevent errors, fraud, and misuse of resources by establishing guidelines and processes that ensure accountability, accuracy, and compliance with laws and regulations.
+	\\ \\
+	\textbf{Technical definition}: Internal control is a process effected by an entity's board of directors, management, and other personnel, designed to provide reasonable assurance regarding the achievement of objectives in the following categories:
+	\begin{itemize}
+		\item Effectiveness and efficiency of operations including safeguarding assets against loss
+		\item Reliability of internal and external financial and non-financial reporting
+		\item Compliance with applicable laws and regulations
+	\end{itemize}
+
+	Note that it is impossible to obtain absolute assurance, since there are always unforeseeable future events
+
+	\subsection{Components of internal controls}
+
+		\begin{itemize}
+			\item Control environment
+				\begin{itemize}
+					\item Refers to the overall attitude, awareness, and actions of an organisation towards establishing and maintaining effective control measures
+					\item A strong control environment is characterised by management's emphasis on integrity, ethical behaviour, and accountability
+					\item This promotes a culture of compliance, where employees understand and adhere to established policies and procedures
+				\end{itemize}
+			\item Risk assessment
+				\begin{itemize}
+					\item Identifying risks that could impact the business
+					\item Assessing the likelihood of these risks
+					\item Evaluation of the impacts
+					\item Prioritise risks that require immediate action
+					\item Develop risk management strategies
+				\end{itemize}
+			\item Control activities
+				\begin{itemize}
+					\item Actions or steps taken by an organisation to mitigate the effects of key risks identified during risk assessment
+					\item This often involves the segregation of duties and authorisation and approval processes
+				\end{itemize}
+			\item Information and communication
+				\begin{itemize}
+					\item Making sure the right information reaches the right people at the right time
+					\item How management communicate risk management policies to staff
+					\item How management seek feedback from staff on concerns and issues that require attention
+					\item A good system creates an environment that allows and promotes free flowing information from the bottom up
+				\end{itemize}
+			\item Monitoring
+				\begin{itemize}
+					\item Periodically checking up on security measures
+					\item Tracking metrics relevant to internal controls
+				\end{itemize}
+		\end{itemize}
+
+	\subsection{Limitations}
+
+		\begin{itemize}
+			\item Genuine mistakes
+			\item Collusion among employees (not very often)
+			\item Computer fraud
+			\item Cost versus benefit of internal control systems (eg. unprofitable to hire infinitely many security guards)
+		\end{itemize}
+
+	
+	\subsection{Auditing}
+
+		\begin{itemize}
+			\item Expression of an opinion on the financial statements
+			\item Provide a true and fair view
+			\item In accordance with Corporation Act 2001
+			\item The auditor's report is included in the annual report
+		\end{itemize}
+
+		\begin{itemize}
+			\item Auditors are independent of the company, and can therefore be an unbiased, professionally sceptical reviewer of the financial statements
+		\end{itemize}
+		
+		\subsubsection{Types of audit opinions}
+
+			\begin{itemize}
+				\item Unmodified (or unqualified) opinion
+					\begin{itemize}
+						\item Issued when the auditors believe that the financial statements give a true and fair view
+						\item Absence of qualifying language
+					\end{itemize}
+				\item Qualified opinion
+					\begin{itemize}
+						\item Issued when a specific part of the financial statements contains a material misstatement or adequate evidence cannot be obtained in a specific, material area, and the rest of the financial statements are found to present a true and fair view, in accordance with accounting standards
+					\end{itemize}
+				\item Adverse opinion
+					\begin{itemize}
+						\item Auditors believe that the misstatements are so pervasive that the financial statements do not present a true and fair view
+					\end{itemize}
+				\item Disclaimer opinion
+					\begin{itemize}
+						\item Auditors are unable to express an opinion because of a limitation in the work the auditors were able to do
+					\end{itemize}
+			\end{itemize}
+
+\section{Responsible Financial Management}
+
+	Companies need to accommodate the impact on all stakeholders of the company. External stakeholders are outside of the company, and internal stakeholders are within the company. In traditional accounting methods, the wants of external stakeholders are not properly accounted for.
+
+	\subsection{Corporate Social Responsibility (CSR)}
+
+		\begin{itemize}
+			\item CSR sets an expectation that all organisations manage the social and environmental impact of their economic activities.
+			\item The financial performance of a company can also be impacted when it fails to identify and manage social and environmental risks
+		\end{itemize}
+
+	\subsection{Sustainability reporting}
+
+		A sustainability report provides disclosures on an organisation's impacts on the environment, society, and the economy. These reports are voluntary. The Global Reporting Initiative (GRI) Standards create a common language for organisations, large or small, private or public, to report on their sustainability impacts in a consistent and credible way.
+
+		\subsubsection{Benefits of sustainability reporting}
+
+			\begin{itemize}
+				\item Enhance transparency to stakeholders
+				\item Strengthen reputation
+				\item Achieve continuous improvement
+				\item Improve regulatory compliance
+				\item Strengthen risk awareness and management
+			\end{itemize}
+
+		\subsubsection{Limitations of sustainability reporting}
+
+			\begin{itemize}
+				\item Can only provide limited assurance
+				\item Since reporting is not mandatory in most jurisdictions, assurance is not mandatory
+				\item Not all factors of sustainability can be measured
+			\end{itemize}
+
+\newpage
+
+\section{Exam Preparation}
+
+	\subsection{Exam Structure}
+		
+		\begin{itemize}
+			\item 18 multiple choice questions covering all examinable weeks of the course (not including week 10)
+			\item Financial statement preparation
+				\begin{itemize}
+					\item Balance sheet
+					\item Income statement
+				\end{itemize}
+			\item Financial statement analysis
+				\begin{itemize}
+					\item DuPont ROE analysis
+				\end{itemize}
+			\item Business taxation
+			\item Valuation and free cash flow estimation
+		\end{itemize}
+		
+	\subsection{Section 1 - MCQs}
+
+		Common sense questions
+	
+	\subsection{Section 2 - Financial Statement Preparation}
+
+		\begin{itemize}
+			\item Balance sheets
+				\begin{itemize}
+					\item Each transaction is pretty self explanatory
+					\item Make sure that all transactions follow the equation (it may be helpful to mark the sections on the provided balance sheet)
+						\begin{align*}
+							\text{Assets} = \text{Liabilities} + \text{Equity}
+						\end{align*}
+					\item Each step should in itself follow this rule for transactions with multiple steps
+					\item For things like rent and insurance that might not be paid at the beginning of the financial year, subtract the total from cash and add the total amount under "Prepaid ...". Then deduct the used amount from the "Prepaid ..." and the retained profits column.
+					\item Accounts receivable is sometimes abbreviated as "A/Rec." or something similar
+					\item Note that inventory is NOT the same as COGS. 
+				\end{itemize}
+			\item Income statements
+				\begin{itemize}
+					\item Income statements are often a lot less structured, but should follow the following layout
+						\begin{table}[H]
+							\setstretch{1.25}
+							\centering
+							\begin{tabular}[c]{p{5cm}|p{5cm}}
+								\hline
+										& \multicolumn{1}{c}{\$}		\\
+								\hline
+								Sales Revenue	&	\\
+								LESS: COGS	&	\\
+								\textbf{Gross Profit}	&	\\
+								\hline
+								Less expenses:	&	\\
+								\qquad Wages	&	\\
+								\qquad Rent	&	\\
+								\qquad Depreciation	&	\\
+								\qquad Insurance	&	\\
+								\hline
+								Net profit & \\
+								\hline
+							\end{tabular}
+						\end{table}
+						
+					\item Everything other than the section below "Less expenses:" is guaranteed to have that layout, so memorise it
+					\item Gross profit refers to $\text{Revenue} - \text{COGS}$ whereas net profit includes all additional costs of a company
+				\end{itemize}
+			\item Closing/retained profits
+				\begin{itemize}
+					\item This can be given as a table or just a calculation
+					\item Simply, it is the retained profits from the previous year (given), add the net profit for the period, less dividends declared during the year
+						\begin{table}[H]
+							\setstretch{1.25}
+							\centering
+							\begin{tabular}[c]{p{8cm}|m{4cm}}
+								\hline
+								& \multicolumn{1}{c}{\$}	\\
+								\hline
+								Retained profits at (end of previous financial year)	&	\\
+								ADD: net profit for the period		&	\\
+								LESS: dividends declared during the period &	\\
+								\hline
+								Retained profits at (end of finished financial year)	&	\\
+								\hline
+							\end{tabular}
+						\end{table}
+					\item These questions usually require you to show working, just writing ADD and LESS is sufficient
+				\end{itemize}
+		\end{itemize}
+
+	\subsection{Section 3 - Financial Statement Analysis}
+
+		\begin{itemize}
+			\item This section requires the least amount of studying
+			\item Remember that DuPont analysis is just the Leverage Ratio, Profit Margin, and Asset Turnover, all of which are on formula sheet
+			\item The calculations of these are basic
+			\item The following part will have some transactions and you will need to state the impact of the transactions on different ratios
+			\item This part has the most "traps" in the exam
+			\item Look at the ratio and see which two things affect it. Then work out whether or not the transaction actually impacts it (it may not). If it does, write down it's impact with one sentence of explanation 
+		\end{itemize}
+
+	\subsection{Section 4 - Business Taxation \& Audit and Control}
+
+		\begin{itemize}
+			\item Taxation is hard since it was only covered in one lecture
+			\item A company qualifies as a base rate entity if they report an aggregate turnover of less than $50,000,000 AND less than 80\% of its assessable income is base rate entity passive income (eg. from investments)
+			\item The base rate is 25\%, otherwise taxed at 30\%
+			\item Calculations are required for these marks to complete these tests
+			\item To calculate the tax payable:
+				\begin{table}[H]
+					\setstretch{1.25}
+					\centering
+					\begin{tabular}[c]{p{8cm}|p{4cm}}
+						\hline
+							& \multicolumn{1}{c}{\$}	\\
+						\hline
+						Assessable income	&		\\
+						LESS expenses		&		\\
+						\small(write down the amount if there's a space for it)					& 		\\
+						\hline
+						ADD BACK			&		\\
+						\qquad Customer entertainment &	\\
+						\qquad Fins and penalin	&	\\
+						\qquad Accounting depreciation	&	\\
+						LESS:				&	\\
+						Tax depreciation	&	\\
+						Tax loss carried forward &	\\
+						\hline
+						Taxable income		&	\\
+						\hline
+						Tax payable @ (tax rate) &	\\
+						\hline
+					\end{tabular}
+				\end{table}
+		\end{itemize}
+
+		\begin{itemize}
+			\item All audit issues fall under the categories Control Environment, Control Activities, and Monitoring
+			\item Anything that would allow an employer to abuse the current system is a risk
+			\item This includes stuff like being overworked or pressured by coworkers
+			\item Most common fixes include
+				\begin{itemize}
+					\item Segregation of duties
+					\item Authorisation to confirm
+					\item Periodic review
+					\item IT systems (Vulnerable to hacking though)
+				\end{itemize}
+		\end{itemize}
+
+	\subsection{Section 5 - Multiples Valuation}
+
+		\begin{itemize}
+			\item Again, this section is mostly simply calculations
+			\item Everything you need is on the formula sheet
+			\item Usually the ratios for the comparison companies are already worked out for you
+			\item To get an "Implied value" for a company, multiple the ratio of another company by whatever the denominator is for the target company
+				\begin{question}{Example}
+					Harvey Norman (target company) has an EPS (earnings per share) of \$2.7. Another company had a P/E ratio of 13.14.
+					\\ \\
+					Since P/E is calculated by
+					\begin{align*}
+						\text{P/E Ratio} &= \frac{\text{Market Price per share}}{\text{Earnings per share}},
+					\end{align*}
+					we find the implied Market Price per share of Harvey Norman by
+					\begin{align*}
+						\text{Implied MP per share} &= \text{P/E} \times \text{EPS}	\\
+													&= 13.14 \times 2.7				\\
+													&= 35.48 \quad \text{\small(always do 2 decimal places unless specified otherwise)}
+					\end{align*}
+				\end{question}
+			\item They won't ask for analysis on the results since they aren't very valuable without other measurements
+		\end{itemize}
+
 \end{document}
+

@@ -1,0 +1,399 @@
+\documentclass{report}
+
+% Imports the catppuccin theme, using the mocha flavor,
+% from the directory above. Actual implementation
+% wouldn't need the import package unless the theme
+% and the document are in different directories.
+\usepackage{import}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{float}
+
+\newcommand\Myperm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\Mycomb[2]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+
+
+\definecolor{yorhabg}{HTML}{C8C2AA}
+\definecolor{yorhafg}{HTML}{4D493E}
+\definecolor{yorhagrid}{HTML}{B5AF9C}
+\definecolor{mred}{HTML}{D24545}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{pastel_red}{RGB}{255, 173, 173}
+\definecolor{pastel_orange}{RGB}{255, 214, 165}
+\definecolor{pastel_yellow}{RGB}{253, 255, 182}
+\definecolor{pastel_green}{RGB}{176, 217, 176}
+\definecolor{pastel_blue}{RGB}{167, 199, 231}
+\definecolor{pastel_purple}{RGB}{222, 218, 244}
+
+\pagecolor{yorhabg}
+\color{yorhafg}
+
+\import{preamble.sty}
+
+% Removes padding above title
+\usepackage{titling}
+\setlength{\droptitle}{-10em}
+
+% Font package
+\usepackage[T1]{fontenc}
+
+\usepackage{fouriernc}
+
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[skins]{tcolorbox}
+
+\DeclareMathOperator{\sgn}{sgn}
+
+\usepackage{tikz}
+\usepackage{eso-pic}
+\usetikzlibrary{calc,shadows.blur}
+\usetikzlibrary{3d}
+
+\AddToShipoutPictureBG{%
+\begin{tikzpicture}[remember picture, overlay,
+                    help lines/.append style={line width=0.05pt, color=yorhagrid}]
+  \draw[help lines] (current page.south west) grid[step=5pt]
+                    (current page.north east);
+\end{tikzpicture}%
+}
+
+% Margins
+\topmargin=0in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\AtBeginEnvironment{tcolorbox}{\small}
+
+\newtcolorbox{question}[1]{%
+    enhanced,
+    colback=yorhabg,
+    colframe=yorhafg,
+    coltext=yorhafg,
+    coltitle=yorhabg,
+    title=\textbf{#1},
+    arc=0pt,
+    outer arc=0pt,
+    drop shadow southeast,
+    sharp corners
+}
+
+\newcommand\bb[1]{\textcolor{yorhafg}{\textbf{#1}}}
+
+\title{\textbf{COMM1140: Collaboration and Innovation in Business}}
+\author{L. Cheung}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\newpage
+
+\section{Course Overview}
+
+	\textbf{Weekly Structure}
+
+		\begin{itemize}
+			\item Complete pre-workshop module online (40-60mins)
+			\item Read workshop agenda
+			\item Go to live workshop
+		\end{itemize}
+
+	\textbf{Assessment Structure}
+		
+		\begin{table}[H]
+			\setstretch{1.25}
+			\centering
+			\begin{tabular}[c]{p{7cm}|p{2cm}|p{2cm}|p{5cm}}
+				\hline
+				\textbf{Assessment Task}		& \textbf{Collab.} & \textbf{Weighting} & \textbf{Due Date}	\\
+				\hline
+				Creativity and Innovation in Everyday Life	& Individual	& 15\%		& 11 June @ 3pm (Week 2)		\\
+				Problem Definition and Project Plan			& Group			& 20\%		& Week 5 in class				\\
+				Solution Delivery							& Group			& 30\%		& Week 10 in class				\\
+				The Redesign Challenge						& Individual	& 35\%		& 13 August @ 3pm (Week 11)		\\
+				\hline
+			\end{tabular}
+		\end{table}
+
+		More assessment information can be found in the official guide.
+
+\chapter{Innovation \& Creativity}
+
+	\section{Creativity vs. Innovation}
+
+		Creativity is the process of generating original ideas and exploring possibilities. These ideas never have to be implemented, rather the value of creativity comes from the act of thinking differently. Innovation is where creative ideas are turned into something useful, practical, and impactful, ie. making ideas real.
+
+		\begin{question}{Example}
+			In the 1960s, Spencer Silver invented a low-tack, reusable adhesive, however he didn't execute the idea into a product. It took another individual, Art Fry, to realise that the adhesive could be used to attach temporary notes to his hymn book, refining the concept into a useful product, Post-it notes.
+		\end{question}
+
+		\subsection{Process of Idea to Innovation}
+
+			\begin{enumerate}
+				\item \textbf{Capture} the creative idea. Write it down, sketch it, or record in whatever format is most accessible.
+				\item \textbf{Explore} the idea by developing it and finding out who it would benefit and what problem(s) would it solve.
+				\item \textbf{Evaluate} the feasibility of the idea to ensure that it can actually be made, delivered, and sustained.
+				\item \textbf{Prototype} on a small-scale, or release a pilot to receive feedback and continue refining. 
+				\item \textbf{Iterate} through solutions based on feedback and testing to optimise usability.
+				\item \textbf{Launch} the product, starting small and gradually scaling up, and most importantly continuing to innovate the idea.
+				\item \textbf{Reflect} on the process, what worked and didn't, and what could be applied to future ideas
+			\end{enumerate}
+
+		\subsection{Key Takeaways}
+
+			\begin{itemize}
+				\item Creativity is about generating ideas; innovation is about making ideas real.
+				\item Ideas can be creative even if they are never implemented.
+				\item Innovation can become repetitive without creativity.
+				\item Turning an idea into innovation is iterative, using capture $\rightarrow$ explore $\rightarrow$ feasibility $\rightarrow$ prototype/test $\rightarrow$ iterate $\rightarrow$ launch/scale $\rightarrow$ reflect.
+			\end{itemize}
+
+	\section{Convergent vs. Divergent Thinking}
+
+		When solving challenging problems, people process potential solutions differently and can be broadly categorised as either convergent or divergent thinkers. Divergent thinking is about exploring as many possible ideas by valuing novelty and originality, while suspending judgement. At this stage, there are no 'bad' ideas. In contrast, convergent thinking is about narrowing down a specific solution. This involves evaluating ideas against a clear criteria, prioritising quality and feasibility, and aiming for the best possible solution. Neither of these methods are superior over the other, however to come to the true best solution, both processes must be applied.
+
+		\begin{question}{Example}
+			In 2007, the founders of Airbnb were broke and needed money for rent. Their first move was to brainstorm as many possibilities to make money quickly, without limiting themselves to conventional solutions. They came up with the idea of renting air mattresses on their apartment floor, with some accommodation services.
+			\\ \\
+			Initially they utilised divergent thinking to generate an unconventional idea that would make them money. Then, they switched their thinking to try and scale the idea into a larger business. Convergent thinking allowed them to decide what features would stay and which would go, shaping their side hustle into a multi-billion-dollar company.
+		\end{question}
+
+		\subsection{Key Takeaways}
+
+			\begin{itemize}
+				\item Divergent thinking generates lots of options and suspends judgement.
+				\item Convergent thinking narrows down using criteria like feasibility and quality.
+				\item Teams need both, used intentionally, to avoid either endless ideas or premature shutdown.
+			\end{itemize}
+
+	\section{Creative Confidence}
+
+		Creative confidence is the ability to be comfortable with generating ideas, and the belief that you can take action on them. It is less about being naturally creative, and more about having the confidence to take the first step. More specifically, it is about trusting yourself to experiment, even when the outcome is uncertain.
+
+		\begin{enumerate}
+			\item Try testing out an idea in a low-stakes environment. Rather than waiting for the 'perfect' idea, test something small and quick. Gather initial feedback from peers which will uncover new perspectives much more valuable than endless planning.
+			\item Treat mistakes as learning opportunities. Creative confidence grows when it is understood that a setback is a small part of the larger process of developing an idea.
+			\item Notice small wins on your part. Realise that your own actions have contributed to something to reinforce your belief that you can act on your ideas.
+		\end{enumerate}
+
+		\begin{question}{Example}
+			Continuing the story of Airbnb, the initial business model seemed too risky and potentially dangerous. However, it was only through practical testing that the value of the idea could be realised and extended. They initially kept the experiments very small, refining their idea in one apartment before expanding.
+		\end{question}
+
+		\subsection{Why Innovation Doesn't Work}
+
+			It is important to understand that innovation involves risk, and that not every idea succeeds. These failures are all part of the process.
+
+			\begin{question}{Example}
+				Google Glass were wearable smart glasses with a heads-up display, camera, and voice controls. The product was designed to be successor to the mobile phone, providing hands-free access to information, notifications, and media.
+				\\ \\
+				The product failed since it performed poorly in daily use, with the camera making other people uncomfortable, leading to privacy concerns. It also had a high price tag for a product that felt like a beta.
+				\\ \\
+				Instead of marketing it as a replacement to the phone, it could have been designed as an accessory at a lower price. Furthermore, the product could have included an obvious recording light to address privacy concerns.
+			\end{question}
+
+		\subsection{Key Takeaways}
+
+			\begin{itemize}
+				\item Creative confidence is about believing you can act on ideas and create change.
+				\item It grows through practice: low-stakes experiments, learning from mistakes, and noticing small wins.
+				\item Setbacks can be treated as learning opportunities that shape iteration.
+			\end{itemize}
+
+\chapter{Collaboration}
+
+	\section{Team Process Efficacy}
+
+		The ability of a team is not based solely on individual ability, but in the way they plan, communicate, coordinate, respond to conflict, and adapt together. This confidence is the foundation for effective collaboration. Team process efficacy builds on self-efficacy and team efficacy. Self-efficacy is the belief in your own ability to succeed at a particular task. Team efficacy is similar, but at the group level. It is the belief that the entire team is capable of succeeding of a goal. Team process efficacy takes this even further, where each group member believes in the planning, communication, coordination, etc. that will allow the group to succeed.
+
+		\begin{itemize}
+			\item \textbf{Planning}
+				\begin{itemize}
+					\item Setting clear goals
+					\item Defining tasks
+					\item Creating timelines
+					\item Consider creating roles such as lead facilitator that can guide the team
+				\end{itemize}
+			\item \textbf{Communication}
+				\begin{itemize}
+					\item Sharing updates, ideas, or concerns
+					\item Being open, clear, and ensuring everyone is on the same page
+				\end{itemize}
+			\item \textbf{Coordination}
+				\begin{itemize}
+					\item Making sure tasks are aligned and resources are used efficiently
+					\item Avoiding duplicated work
+				\end{itemize}
+			\item \textbf{Conflict management}
+				\begin{itemize}
+					\item Don't avoid discussing disagreements
+					\item Teams should aim to handle conflict constructively
+					\item Address issues openly, find solutions and maintain respect
+				\end{itemize}
+			\item \textbf{Adaptability}
+				\begin{itemize}
+					\item Teams with high process efficacy are able to adjust quickly when plans need to change
+					\item Making sure that the team is resilient
+				\end{itemize}
+		\end{itemize}
+
+		\begin{question}{Example}
+			The Slack messaging platform started as a failed video game. The game didn't work out, but the team had strong process efficacy and trusted their ability to plan, communicate, and adapt. They repurposed the original game's chat into Slack, creating one of the most successful communication platforms.
+		\end{question}
+
+	\subsection{Key Takeaways}
+
+		\begin{itemize}
+			\item Team process efficacy is confidence in how a team works together, not just confidence in individual ability.
+			\item String team processes include planning, communicating, coordinating, conflict management, and adaptability.
+			\item Process confidence develops through early wins, clear roles, psychological safety, and regular feedback loops.
+			\item Strong teamwork depends on how a group works through challenge, not only on the final result.
+			\item Different roles within a team support process efficacy in different ways.
+		\end{itemize}
+
+	\section{Lencioni's 5 Dysfunctions}
+
+		The success of a teams depend on foundations that support trust, challenge, accountability, and shared focus. Patrick Lencioni studied why teams fail and identified five common dysfunctions that derailed teamwork. These are shown in a pyramid, where each dysfunction builds on the one beneath it. (Results $\rightarrow$ Accountability $\rightarrow$ Commitment $\rightarrow$ Conflict $\rightarrow$ Trust).
+
+		\begin{itemize}
+			\item Absence of trust
+				\begin{itemize}
+					\item Occurs when team members aren't comfortable with being vulnerable, admitting mistakes, asking for help, or sharing uncertainty
+					\item Building trust early sets the stage for open collaboration
+				\end{itemize}
+			\item Fear of conflict
+				\begin{itemize}
+					\item Teams that avoid disagreement often settle for safe or mediocre ideas instead of tackling tough issues
+					\item A healthy debate can lead to better problem solving and more creativity
+				\end{itemize}
+			\item Lack of commitment
+				\begin{itemize}
+					\item When people don't feel heard, they may agree outwardly but fail to fully support decisions
+					\item Clear decisions and buy-in from everyone ensures continual progress is made
+				\end{itemize}
+			\item Avoidance of accountability
+				\begin{itemize}
+					\item With no commitment, team members hesitate to hold each other responsible
+					\item Openly checking in and giving constructive feedback maintains a fair work distribution and keeps the project on track
+				\end{itemize}
+			\item Inattention to results
+				\begin{itemize}
+					\item Success should be measured by the team's outcome, not by individual contribution
+					\item Focusing on shared results ensures a cohesive, high-quality project
+				\end{itemize}
+		\end{itemize}
+
+		\begin{question}{Example}
+			The most visible dysfunction is an absence of trust. It is clear that the group have different ideas, however each team member is unable to constructively comment and build on their peer's work. Overall, this creates a general sense of hostility, restricting each individual and most crucially the progress of the team.
+			\\ \\
+			Another dysfunction present is a fear of conflict. One of the group members does not contribute at all during the meeting, due to the other members harmfully criticizing the work of their peer.
+		\end{question}
+
+		\subsection{Key Takeaways}
+
+			\begin{itemize}
+				\item Team dysfunctions often build on one another rather than appearing in isolation.
+				\item Absence of trust weakens the foundation for open collaboration.
+				\item Fear of conflict can stop teams from addressing important issues directly.
+				\item Commitment and accountability become harder when people do not feel heard or included.
+				\item Shared results remain strongest when teams focus on collective goals rather than individual priorities.
+			\end{itemize}
+
+	\section{Courageous Conversations}
+
+		Some problems require someone to name what is happening, ask better questions, and reopen a conversation that has become difficult. The focus is to address tension early, rather than let it affect the outcome.
+
+		In certain situations of tension in can feel easier to stay in silence rather than address the issue. To communicate clearly about the problem, the four C's can be used.
+
+		\begin{itemize}
+			\item \textbf{Clarity} - Be clear about the intent and the issue. Understand what you want to address and why it matters, so the conversation stays focused.
+			\item \textbf{Curiosity} - Ask questions and understand the team member's perspective.
+			\item \textbf{Compassion} - Lead with empathy and emotional intelligence. Consider the feeling of team members and approach the conversation with kindness.
+			\item \textbf{Courage} - Have the confidence to say what needs to be said, kindly and honestly.
+		\end{itemize}
+
+		Difficult conversations are often easier when they begin well, with a clear purpose so that the discussion stays grounded.
+
+		\begin{enumerate}
+			\item Set the right intention, focus on improving the team or solving the problem rather than concentrating on blame.
+			\item Speak from your own perspective using "I" statements to express concerns and feelings without attacking others.
+			\item Acknowledge the difficulty and tension of the conversation.
+			\item Focus on behaviour rather than the person, addressing actions rather than the character.
+			\item Ask open questions and invite others to contribute to encourage discussion and collaboration.
+			\item Suggest a path forward and conclude with a constructive solutions
+		\end{enumerate}
+
+		\subsection{Key Takeaways}
+			
+			\begin{itemize}
+				\item Courageous conversations help teams address issues before they become harder to resolve.
+				\item The 4 C's provide a practical way to approach difficult discussions.
+				\item Productive conversations focus on behaviour, not personal attack.
+				\item Open questions help keep the exchange collaborative rather than defensive.
+				\item A clear next step matters if the conversation is going to lead to change.
+			\end{itemize}
+
+	\section{Leadership}
+
+		In collaborative work, leadership often appears in smaller decisions and actions rather than formal authority. Effective teams rotate leadership depending on what's needed. Being a good leader means developing specific skills including:
+
+		\begin{itemize}
+			\item Active listening
+			\item Communication clarity
+			\item Conflict navigation
+			\item Decision making
+			\item Accountability
+		\end{itemize}
+
+		Leadership can be classified under four different styles that each have strong suits and drawbacks with specific use cases. The first is \textbf{directive} leadership, where someone provides clear instructions, sets priorities, and makes decisions, especially useful when a team needs structure or quick action. \textbf{Facilitative} leadership encourages participation and maintains active listening. \textbf{Supportive} leadership is a style that focuses on helping team members succeed individually, offering guidance, assistance, or encouragement when it is needed. Finally, \textbf{visionary} leadership is where someone inspires the team with a clear long term goal or direction.
+
+		\begin{question}{Example}
+			Google's culture encourages shared leadership, where team members step into different leadership styles depending on the task. The flexibility within a team to switch to different leadership styles is one reason behind Google team's high performance.
+		\end{question}
+
+		\subsection{Key Takeaways}
+
+			\begin{itemize}
+				\item Leadership in collaboration is not limited to one formal role.
+				\item Different moments may call for directive, facilitative, supportive, or visionary leadership.
+				\item Leadership skills such as listening, clarity, conflict navigation, decision making, and accountability strengthen teamwork.
+				\item Self-awareness helps you recognise both your strengths and the areas you want to develop.
+				\item Peer support can help turn leadership reflection into practical growth.
+			\end{itemize}
+
+	\section{Project Management}
+
+		Project management helps turn broad intentions into clearer steps. It helps teams stay aligned, visible, and responsive as the project evolves.
+
+		\begin{enumerate}
+			\item Define a clear goal
+			\item Break the goal into bite-sized tasks
+			\item Assign who does what, and by when
+			\item Track progress through regular check-ins
+			\item Adjust as you go
+		\end{enumerate}
+
+		\subsection{Key Takeaways}
+
+			\begin{itemize}
+				\item Project management helps teams move from broad ideas to clearer action.
+				\item Strong project work depends on clear goals, visible tasks, assigned accountability, regular check-ins, and flexibility.
+				\item Stand-ups help teams keep progress visible and surface blockers early.
+				\item Miro supports shared planning, evidence gathering, and weekly contribution across the team.
+				\item A strong Solution Plan shows a credible process for developing and testing a solution, not only a final answer.
+			\end{itemize}
+
+\end{document}
